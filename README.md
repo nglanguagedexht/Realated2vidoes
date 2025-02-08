@@ -1,2 +1,1 @@
 # cors-misconfigured
-dd
