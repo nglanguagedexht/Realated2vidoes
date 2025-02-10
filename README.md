@@ -1,1 +1,1 @@
-# cors-misconfigured
+# README
