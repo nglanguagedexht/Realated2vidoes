@@ -1,4 +1,14 @@
-```
+```sh
+MAKING 
+
+$> ffmpeg -f lavfi -i color=c=black:s=320x240:d=5 -vf "drawtext=text='FLAG{Subscribe_Now\!\!\!}':fontcolor=white:fontsize=24:x=(w-tw)/2:y=(h-th)/2" -c:v libx264 -pix_fmt yuv420p secret.mp4
+
+$> convert -size 320x240 xc:white -pointsize 24 -fill black -draw "text 100,120 'Nothing to see here!'" dummy.webp
+
+$> cat dummy.webp secret.mp4 > challenge.webp
+
+$> rm -rf secret.mp4 
+
 SOLUTION
 
 $> stat -c %s 13.webp
