@@ -1,0 +1,8 @@
+```
+SOLUTION
+
+$> stat -c %s 13.webp
+$> stat -c %s 37.webp
+$> tail -c +$(( $(stat -c %s 13.webp) + 1 )) 37.webp > FLAG.mp4
+$> ffplay FLAG.mp4
+```
